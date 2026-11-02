@@ -1,0 +1,272 @@
+
+/* =================================
+   Responsive CSS
+   MongSuinu Marma Portfolio
+================================= */
+
+/* Large Laptop & Desktop */
+@media screen and (max-width: 1200px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .heroContent h1 {
+        font-size: 45px;
+    }
+
+    .imageCircle {
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+/* Laptop & Tablet */
+@media screen and (max-width: 992px) {
+
+    section {
+        padding: 70px 0;
+    }
+
+    .navMenu {
+        gap: 18px;
+    }
+
+    .hero {
+        gap: 25px;
+    }
+
+    .heroContent h1 {
+        font-size: 40px;
+    }
+
+    .serviceGrid,
+    .projectGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imageCircle {
+        width: 270px;
+        height: 270px;
+    }
+
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 90%;
+    }
+
+    /* Navbar */
+
+    .header .row {
+        min-height: 65px;
+    }
+
+    .menuToggle {
+        display: block;
+    }
+
+    .navMenu {
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: var(--body-bg);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 5%;
+        gap: 20px;
+        box-shadow: var(--shadow);
+        border-top: 1px solid var(--border-color);
+    }
+
+    .navMenu.active {
+        display: flex;
+    }
+
+    .navMenu a {
+        width: 100%;
+    }
+
+    /* Hero */
+
+    .hero {
+        min-height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .heroContent {
+        width: 100%;
+    }
+
+    .heroContent h1 {
+        font-size: 36px;
+    }
+
+    .heroContent p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .heroButtons {
+        justify-content: center;
+    }
+
+    .socialLinks {
+        justify-content: center;
+    }
+
+    .heroImage {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .imageCircle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .floatingCard {
+        right: 5%;
+    }
+
+    /* Sections */
+
+    .sectionTitle {
+        font-size: 29px;
+        margin-bottom: 30px;
+    }
+
+    .serviceGrid,
+    .projectGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .serviceCard,
+    .projectCard {
+        padding: 25px;
+    }
+
+    /* Contact */
+
+    .contactContent h2 {
+        font-size: 29px;
+    }
+
+    /* Footer */
+
+    .footerContent {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .navLogo {
+        font-size: 21px;
+    }
+
+    .heroContent h1 {
+        font-size: 30px;
+    }
+
+    .heroContent p {
+        font-size: 14px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .imageCircle {
+        width: 220px;
+        height: 220px;
+    }
+
+    .profileText {
+        font-size: 19px;
+    }
+
+    .floatingCard {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .heroButtons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .sectionTitle {
+        font-size: 25px;
+    }
+
+    .serviceCard h3 {
+        font-size: 18px;
+    }
+
+    .faqItem {
+        padding: 15px;
+    }
+
+    .faqItem summary {
+        font-size: 14px;
+    }
+
+    .contactContent h2 {
+        font-size: 25px;
+    }
+
+    .pageHero h1 {
+        font-size: 30px;
+    }
+
+    .scrollTop {
+        right: 15px;
+        bottom: 15px;
+    }
+
+}
+
+/* Extra Small Mobile */
+@media screen and (max-width: 360px) {
+
+    .heroContent h1 {
+        font-size: 26px;
+    }
+
+    .imageCircle {
+        width: 190px;
+        height: 190px;
+    }
+
+    .navLogo {
+        font-size: 18px;
+    }
+
+    .sectionTitle {
+        font-size: 22px;
+    }
+
+}
